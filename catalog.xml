@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/jddm11/Desktop/globalweather.asmx" uri="src/conf/xml-resources/web-services/NewWebServiceFromWSDL/wsdl/globalweather.asmx.wsdl"/>
+    <system systemId="file:/C:/Users/jddm11/Desktop/airport.asmx" uri="src/conf/xml-resources/web-services/airportService/wsdl/airport.asmx.wsdl"/>
+</catalog>
