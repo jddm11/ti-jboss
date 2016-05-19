@@ -27,7 +27,7 @@ public class tallerIntegracion01 {
     @WebMethod(operationName = "citiesAndAirports")
     public String[] citiesAndAirports(@WebParam(name = "country") String country) {
         GlobalWeather globalWs         = new GlobalWeather();
-        GlobalWeatherSoap globalSoap = globalWs.getGlobalWeatherSoap();
+        GlobalWeatherSoap globalSoap   = globalWs.getGlobalWeatherSoap();
         Airport airportWs       = new Airport();
         AirportSoap airportSoap = airportWs.getAirportSoap();
         String[] result = new String[2];
