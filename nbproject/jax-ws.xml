@@ -2,7 +2,7 @@
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services>
     <service name="NewWebServiceFromWSDL">
-      <implementation-class>service.soap.NewWebServiceFromWSDL</implementation-class>
+      <implementation-class>service.soap.weatherService</implementation-class>
       <wsdl-url>file:/C:/Users/jddm11/Desktop/globalweather.asmx</wsdl-url>
       <local-wsdl-file>globalweather.asmx.wsdl</local-wsdl-file>
       <service-name>GlobalWeather</service-name>

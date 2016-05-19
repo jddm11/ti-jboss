@@ -12,7 +12,7 @@ import javax.jws.WebService;
  * @author jddm11
  */
 @WebService(serviceName = "GlobalWeather", portName = "GlobalWeatherSoap", endpointInterface = "net.webservicex.GlobalWeatherSoap", targetNamespace = "http://www.webserviceX.NET", wsdlLocation = "WEB-INF/wsdl/NewWebServiceFromWSDL/globalweather.asmx.wsdl")
-public class NewWebServiceFromWSDL {
+public class weatherService {
 
     public java.lang.String getWeather(java.lang.String cityName, java.lang.String countryName) {
         //TODO implement this method

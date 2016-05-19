@@ -22,17 +22,17 @@ public class tallerIntegracion01 {
 
     /**
      * This is a sample web service operation
+     * @return Array [cities,airports]
      */
     @WebMethod(operationName = "citiesAndAirports")
     public String[] citiesAndAirports(@WebParam(name = "country") String country) {
-        GlobalWeather globalW = new GlobalWeather();
-        GlobalWeatherSoap globalWsoap= globalW.getGlobalWeatherSoap();
-        Airport airportWs = new Airport();
+        GlobalWeather globalWs         = new GlobalWeather();
+        GlobalWeatherSoap globalSoap = globalWs.getGlobalWeatherSoap();
+        Airport airportWs       = new Airport();
         AirportSoap airportSoap = airportWs.getAirportSoap();
-        String airportS = airportSoap.getAirportInformationByCountry(country);
         String[] result = new String[2];
-        result[0] = globalWsoap.getCitiesByCountry(country);
-        result[1] = airportS;
+        result[0] = globalSoap.getCitiesByCountry(country);
+        result[1] = airportSoap.getAirportInformationByCountry(country);
         return result;
     }
 }
